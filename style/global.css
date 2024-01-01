@@ -1,0 +1,190 @@
+*{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: "roboto";
+}
+
+:root {
+--background: #000000;
+--text:#FFFFFF;
+--atencion: #2997FF;
+--title: #F5F5F7;
+--subtitle: #6E6E73;
+--name: #DED2B9;
+--iphone: #1D1D1F;
+--header: #928e8e;
+--hover: rgb(198, 198, 202);
+}
+
+header{
+    background-color: var(--background);
+    color: var(--header);
+    height: fit-content;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 8px 0px;
+    opacity: 0.9;
+}
+
+header nav ul {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+    background-color: var(--background);
+}
+
+header nav ul li {
+    width: fit-content;
+    height: fit-content;
+    padding: 0 0.75rem;
+    font-size: small;
+    cursor: pointer;
+    list-style: none;
+}
+
+header nav ul li:hover {
+    color: var(--hover);
+    transition: 0.5s;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main section {
+    text-align: center;
+    position: relative;
+}
+
+main section img {
+    width: 100%;
+    height: auto;
+}
+
+main .main-section h1{ 
+    color: var(--title);
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4rem;
+    letter-spacing: -0.28px;
+}
+
+main .main-section h2 {
+    color: var(--subtitle);
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2rem;
+    letter-spacing: 0.11px;
+    margin-bottom: 1rem;
+}
+
+main .main-section sub {
+    font-size: 0.9rem;
+}
+
+main section a{
+    color: var(--atencion);
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main section a:hover{
+    text-decoration:underline;
+}
+
+main .main-section .text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 52px;
+}
+
+main .spirited-section > div {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+main .spirited-section > div:last-child {
+    bottom: 50px;
+}
+
+main .spirited-section > div:first-child {
+    top: 105px;
+    display: flex;
+    justify-content: space-between;  
+    width: 100%;
+    max-width: 60%;
+}
+
+main .spirited-section > div:first-child p {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    color: var(--name);
+    letter-spacing: -0.6px;
+}
+
+main .spirited-section p{
+    color: var(--title);
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.11px;
+}
+
+main .spirited-section span{
+    color: var(--text);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    display: block;
+    letter-spacing: 0.23px;
+}
+
+main .iphone-section h2{ 
+    color: var(--iphone);
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4rem;
+    letter-spacing: -0.28px;
+}
+
+main .iphone-section p {
+    color: var(--iphone);
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2rem;
+    letter-spacing: 0.11px;
+    margin-bottom: 1rem;
+}
+main .iphone-section .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+
+main .iphone-section sub {
+    font-size: 0.9rem;
+}
+
+main .iphone-section .text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 52px;
+}
